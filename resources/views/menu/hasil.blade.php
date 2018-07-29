@@ -16,13 +16,13 @@
                     <ul class="list-menu">
                         @foreach($menu as $index => $item)
                           @if($item->count() == 0)
-                          <li class="{{ active_link($item->url) }}">
+                          <li class="">
                             <a href="{{ $item->menu}}">{{ $item->menu }}</a>
                           </li>
                           @else
-                          <li class="tree">
-                              <a href="#">{{ $item->menu }} <i class="zmdi zmdi-chevron-down"></i></a>
-                              <ul class="sub-menu">
+                          <li class="">
+                              <a href="#">{{ $item->menu }}</a>
+                              <ul class="">
                                 @foreach($list->where('parent_id',$item->id) as $subindex => $subitem)
                                   <li>
                                       <a href="{{ $subitem->link }}">{{ $subitem->menu }}</a>
