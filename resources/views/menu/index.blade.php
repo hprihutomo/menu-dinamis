@@ -13,7 +13,8 @@
                             {{ session('status') }}
                         </div>
                     @endif
-                    <table class="table table-hover">
+                    {{ $tarif }}
+                    {{-- <table class="table table-hover">
                         <thead>
                             <th>Id</th>
                             <th>Parent</th>
@@ -36,7 +37,7 @@
                                 </tr>
                             @endif
                         </tbody>
-                    </table>
+                    </table> --}}
                 </div>
             </div>
         </div>

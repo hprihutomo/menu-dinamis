@@ -19,5 +19,6 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('menu', 'MenuController@index')->name('menu.index');
+// Route::get('menu', 'MenuController@index')->name('menu.index');
 Route::get('hasil', 'MenuController@hasil')->name('menu.hasil');
+Route::get('menu', 'TarifController@index')->name('menu.hasil');
